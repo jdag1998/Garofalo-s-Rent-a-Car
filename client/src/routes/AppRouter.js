@@ -1,4 +1,6 @@
 import { BrowserRouter as Router,Routes,Route} from 'react-router-dom'
+import Layout from '../components/layouts/Layout'
+
 import AccountPage from '../pages/AccountPage'
 import UsersPage from '../pages/admin/UsersPage'
 import HomePage from '../pages/HomePage'
@@ -10,7 +12,9 @@ import RegisterPage from '../pages/RegisterPage'
 
 export default function AppRouter() {
     return(
+        
     <Router>
+        <Layout />
             <Routes> 
                 <Route  path="/" element={<HomePage/>} />
                 <Route path= "/login" element={<LoginPage/>} />
