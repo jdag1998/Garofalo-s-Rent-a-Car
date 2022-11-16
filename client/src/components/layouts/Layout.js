@@ -1,10 +1,11 @@
 import Navigation from "../Navigation"
 
-export default function Layout() {
+export default function Layout({children}) {
     return(
         <>
         <Navigation />
-        <h1>Footer</h1>
+        {children}
+        
         </>
     )
 

@@ -9,6 +9,7 @@ import NotFoundPage from '../pages/NotFoundPage'
 import ProjectPage from '../pages/ProjectPage'
 import ProjectsPage from '../pages/ProjectsPage'
 import RegisterPage from '../pages/RegisterPage'
+import PrivateRoute from './PrivateRoutes'
 
 export default function AppRouter() {
     return(
@@ -18,11 +19,11 @@ export default function AppRouter() {
             <Routes> 
                 <Route  path="/" element={<HomePage/>} />
                 <Route path= "/login" element={<LoginPage/>} />
-                <Route  path= "/register" element={<RegisterPage/>} />
-                <Route  path= "/account" element={<AccountPage/>} />
-                <Route  path= "/projects" element={<ProjectsPage/>} />
-                <Route  path="/project/:projectId" element={<ProjectPage/>} />
-                <Route path= "/admin/users" element={<UsersPage/>} />
+                <Route  path= "/register" element={<PrivateRoute> <RegisterPage/> </PrivateRoute>} />
+                <Route  path= "/account" element={<PrivateRoute> <AccountPage/> </PrivateRoute>} />
+                <Route  path= "/projects" element={<PrivateRoute> <ProjectsPage/> </PrivateRoute>} />
+                <Route  path="/project/:projectId" element={<PrivateRoute> <ProjectPage/> </PrivateRoute>} />
+                <Route path= "/admin/users" element={<PrivateRoute> <UsersPage/> </PrivateRoute>} />
 
                 <Route path= "*" element={<NotFoundPage/>} />
                 
