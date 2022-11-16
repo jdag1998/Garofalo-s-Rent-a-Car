@@ -1,23 +1,17 @@
 import {Navigate} from 'react-router-dom'
 import useAuth from '../auth/useAuth';
 
-const PrivateRoute = ({children}) => {
+const PrivateRoute = ({hasRole: role, rest}) => {
 
-    let {user1} = useAuth(); 
+    const {user} = useAuth(); 
 
+if (role && user?.role !== role) return <Navigate to="/" />
 
-
-if(!user1) return<Navigate to="/login" />
-return children
+if(!user) return<Navigate to="/login" />
+return rest
 
 };
 
-// export default function PrivateRoute(props){
-//     return(
-//         <Routes>
-//         <Route {...props} />
-//         </Routes>
-//     )
-// }
+
 
 export default PrivateRoute

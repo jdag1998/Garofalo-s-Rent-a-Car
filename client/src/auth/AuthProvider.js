@@ -1,23 +1,22 @@
-import { Children, useState } from "react";
+import { useState } from "react";
 import { createContext } from "react";
-import context from "react-bootstrap/esm/AccordionContext";
+import roles from "../helpers/roles";
 
-export const AuthContext = createContext()
+export const AuthContext = createContext();
 
 export default function AuthProvider({children}){
-       const [user, setUser] = useState(null)
+
+       const [user, setUser] = useState()
 
 
        const contextValue = {
-
-        user
+        user,
        }
-
-
 
     return(
        <AuthContext.Provider value={contextValue}>
-         {children}
+ {children}
+
        </AuthContext.Provider>
 
 
