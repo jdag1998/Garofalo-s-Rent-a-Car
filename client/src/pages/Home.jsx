@@ -145,6 +145,7 @@ const Home = () => {
   };
 
   return (
+    
     <Layout>
       <div className="slider">
         <div className="left">
