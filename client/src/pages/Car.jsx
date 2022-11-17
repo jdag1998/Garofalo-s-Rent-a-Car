@@ -28,6 +28,7 @@ const Car = () => {
   const params = useParams();
     const {carId} = params;
 
+    
   useEffect(() => {
     if(!localStorage.getItem("userInfo")) {
       navigate('/login');
