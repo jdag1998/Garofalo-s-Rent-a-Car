@@ -4,7 +4,7 @@
 Garofalo's Rent a Cae is a web app is supposed to help you rent a car and you can choose betwwen two categories which are 
  Peugot, Citroen and Hyundai. This application uses the MERN STACK ( MongoDB, Express, React.js and Nodejs).
 
-##Project Requirements:
+## Project Requirements:
 A working full-stack application, built by you, using the MERN stack: Node.js, MongoDB/Mongoose, Express and React.
 At least two models with full CRUD.
 Follow proper MVC backend structure (models, controllers, routes in separate folders)
@@ -16,15 +16,15 @@ At least one GitHub commit per day (at least 15)
 Be deployed online and accessible to the public
 A README.md file (should include a link to your hosted working website) 
 
-##Technologies used
+## Technologies used
 
-###FRON-END
+### FRON-END
 React JS
 Redux 
 React-router-dom 
 Axios 
 
-###BACK-END
+### BACK-END
 
 Express
 Mongoose
@@ -36,7 +36,7 @@ Database
 MongoDB
 
 
-##Future goals
+## Future goals
 Find a way to make the app work properly. 
 Add more car brands.
 Implement more content an options  in the user end.
