@@ -20,19 +20,25 @@ A README.md file (should include a link to your hosted working website)
 
 ### FRON-END
 React JS
+
 Redux 
-React-router-dom 
+
+React-router-dom
+
 Axios 
 
 ### BACK-END
 
 Express
+
 Mongoose
-Mongoose paginate
+
 bcryptjs 
+
 Cors
+
 dotenv
-Database
+
 MongoDB
 
 
