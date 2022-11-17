@@ -3,6 +3,7 @@ const initialData = {
 };
 
 export const loading = (state = initialData, action) => {
+    
     switch(action.type) {
         case 'LOADING': {
             return{
