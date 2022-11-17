@@ -51,6 +51,7 @@ const Register = () => {
       }
     })
 
+    
   return (
     <Layout>
       <div className="form-container">
